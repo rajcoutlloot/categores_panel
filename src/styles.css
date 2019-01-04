@@ -1,1 +1,188 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* You can add global styles to this file, and also import other style files */
+.word-break { word-break: break-all; }
+.square100 {
+	width: 100px;
+	height: 100px;
+}
+.square75 {
+	width: 75px;
+	height: 75px;
+}
+.square50 {
+	width: 50px;
+	height: 50px;
+}
+.square25 {
+	width: 25px;
+	height: 25px;
+}
+
+/* SWIPER Styling */
+
+/* FONT */
+
+.f30 {
+    font-size: 30px
+}
+
+.f22 {
+    font-size: 22px
+}
+
+.f20 {
+    font-size: 20px
+}
+
+.f18 {
+    font-size: 18px
+}
+
+.f17 {
+    font-size: 17px
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.f15 {
+    font-size: 15px
+}
+
+.f14 {
+    font-size: 14px
+}
+
+.f13 {
+    font-size: 13px
+}
+
+.f12 {
+    font-size: 12px
+}
+
+.f11 {
+    font-size: 11px
+}
+
+.f10 {
+    font-size: 10px
+}
+
+.font-bold {
+    font-weight: 600 !important
+}
+
+.md-form label,
+.font-small {
+    font-size: small
+}
+
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+    user-select: none;
+}
+
+.strikethrough {
+    position: relative;
+}
+
+/* BACKGROUND COLOR */
+
+.bg-white1 {
+    background-color: #f5f8f9
+}
+
+.bg-grey1 {
+    background-color: #eff1f4 !important
+}
+
+.bg-grey2 {
+    background-color: #c4c4c4
+}
+
+.bg-grey3 {
+    background-color: #888c8d
+}
+
+.bg-grey4 {
+    background-color: #76848b;
+}
+
+.bg-black {
+    background-color: #242c37
+}
+
+.bg-pink1 {
+    background-color: #ff3651
+}
+
+.bg-yellow1 {
+    background-color: #DCCF14
+}
+
+.bg-green1 {
+    background-color: #B7FFD5
+}
+
+.bg-green2 {
+    background-color: #00c853
+}
+
+
+/* TEXT COLOR */
+.text-white1 { color: #f5f8f9 !important }
+.text-grey1 { color: #eff1f4 !important }
+.text-grey2 { color: #c4c4c4 !important }
+.text-grey3 { color: #888c8d !important }
+.text-grey4 { color: #76848b !important }
+.text-black { color: #242c37 !important }
+.text-pink1 { color: #ff3651 !important }
+.text-yellow1 { color: #DCCF14 !important }
+.text-green1 { color: #B7FFD5 !important }
+.text-green2 { color: #00c853 !important }
+.text-yellow { color: #D6DA57 !important }
+
+/* WIDTH & HEIGHT */
+
+.w100 {
+    width: 100%
+}
+.w87{
+    width: 87%;
+}
+.w67{
+   width: 67%;
+}
+.w54{
+   width: 54%;
+}
+.w40{
+    width: 40%;
+}
+
+/* CSS for Fonts-Icons */
+
+.perfect-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-break-all{
+    word-break: break-all;
+}
+.elpsis{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

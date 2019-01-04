@@ -1,0 +1,17 @@
+
+<!-- main category lisr to be appeared -->
+<div class="listsection">
+    <div class="main_wrapper" *ngFor="let category of categories" (click)="nextpage(category.haveAttributes,category.haveSubCats,category.categoryId)"> 
+        <div class="image-container">
+                <div class="image-wrapper">
+                </div>
+            </div>
+        <div class="image-details">
+            <div class="tittle"> {{ category.categoryId }} </div>
+            <div class="shortdesc"> {{ category.category }}</div>
+            <div class="longdesc"> {{ category.categoryName }}  </div>
+            <div class="tittle"></div>
+        </div> 
+    </div>  
+</div>
+<!-- main category lisr to be appeared -->

@@ -12,6 +12,14 @@ const routes: Routes = [
   {
 	  path: 'subcats',
     loadChildren: './views/subcategories/subcategories.module#SubcategoriesModule'
+  },
+  {
+	  path: 'tempcats',
+    loadChildren: './views/temp-categories/temp-categories.module#TempCategoriesModule'
+  },
+  {
+	  path: 'addCats',
+    loadChildren: './views/add-new-categories/add-new-categories.module#AddNewCategoriesModule'
   }
 ];
 

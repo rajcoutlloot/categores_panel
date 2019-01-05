@@ -1,16 +1,19 @@
 
 <!-- main category lisr to be appeared -->
 <div class="listsection">
-    <div class="main_wrapper" *ngFor="let category of categories" (click)="nextpage(category.haveAttributes,category.haveSubCats,category.categoryId)"> 
+    <div class="main_wrapper" *ngFor="let category of categories"> 
         <div class="image-container">
                 <div class="image-wrapper">
                 </div>
             </div>
-        <div class="image-details">
-            <div class="tittle"> {{ category.categoryId }} </div>
-            <div class="shortdesc"> {{ category.category }}</div>
-            <div class="longdesc"> {{ category.categoryName }}  </div>
-            <div class="tittle"></div>
+        <div class="image-details" >
+            <div class="tittle" > {{ category.categoryId }} </div>
+            <div class="shortdesc" > {{ category.category }}</div>
+            <div class="longdesc" > {{ category.categoryName }}  </div>
+            <div class="tittle"> 
+                <button type="button" (click)="nextpage(category.haveAttributes,category.haveSubCats,category.categoryId)" class="btn btn-outline-warning">View details</button>
+                <button type="button" class="btn btn-outline-warning" (click)="copyCategories(category.categoryId)" >Copy to Temporary categories</button>
+            </div>
         </div> 
     </div>  
 </div>

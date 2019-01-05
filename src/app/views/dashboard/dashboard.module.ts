@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { HomeComponent } from './home/home.component';
 
@@ -22,7 +23,8 @@ export class HomeRoutingModule{}
 @NgModule({
   imports: [
 		CommonModule,
-		HomeRoutingModule
+		HomeRoutingModule,
+		MatSnackBarModule
 	],
 	exports:[ HomeComponent ],
   declarations: [ HomeComponent ]

@@ -13,15 +13,16 @@ export class SubcategoriesComponent implements OnInit {
     private route : ActivatedRoute,
     private subcatservice : SubcategoriesServiceService,
     private router : Router
-    ) { }
+    ) {
+      this.route.queryParams
+      .subscribe(params => {
+        this.categoryId = params.id;
+        this.subcategorieslist();
+      });
+    }
   categoryId : any;
   subcategories : any;
   ngOnInit() {
-    this.route.queryParams
-    .subscribe(params => {
-      this.categoryId = params.id;
-    });
-    this.subcategorieslist();
   }
   
   subcategorieslist(){
@@ -33,7 +34,6 @@ export class SubcategoriesComponent implements OnInit {
   }
 
   nextpage(haveAttributes,haveSubCats,id){
-    console.log('query params', id);
     let catehoryid = id;
     if(haveSubCats === 1){
         this.router.navigate(['/subcats'], { queryParams : { id: catehoryid } });

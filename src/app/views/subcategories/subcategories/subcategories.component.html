@@ -1,7 +1,7 @@
 
 <!-- subcategorylist category list to be appeared -->
 <div class="listsection">
-  <div class="main_wrapper" *ngFor="let subcategory of subcategories" (click)="nextpage(subcategory.haveAttributes,subcategory.haveSubCats,subcategory.categoryId)"> 
+  <div class="main_wrapper" *ngFor="let subcategory of subcategories" > 
       <div class="image-container">
               <div class="image-wrapper">
               </div>
@@ -10,7 +10,9 @@
           <div class="tittle"> {{ subcategory.categoryId }}  </div>
           <div class="shortdesc">{{ subcategory.category }}  </div>
           <div class="longdesc">{{ subcategory.categoryName }}  </div>
-          <div class="tittle"></div>
+          <div class="tittle">
+                <button type="button" (click)="nextpage(subcategory.haveAttributes,subcategory.haveSubCats,subcategory.categoryId)" class="btn btn-outline-warning">View details</button>
+          </div>
       </div> 
   </div>  
 </div>

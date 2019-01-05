@@ -1,0 +1,47 @@
+<div class="container pt-5 bg-grey1">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Category</label>
+                        <input type="text" formControlName="category" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.category.errors }" />
+                        <div *ngIf="submitted && f.category.errors" class="invalid-feedback">
+                            <div *ngIf="f.category.errors.required">Category is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Category Name</label>
+                        <input type="text" formControlName="categoryName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryName.errors }" />
+                        <div *ngIf="submitted && f.categoryName.errors" class="invalid-feedback">
+                            <div *ngIf="f.categoryName.errors.required">Category Name is required</div>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Choose options</label>
+                        <select formControlName="dropdown"  class="form-control" id="exampleFormControlSelect1" [ngClass]="{ 'is-invalid': submitted && f.dropdown.errors }">
+                            <option>have Attributes</option>
+                            <option>have subcategories</option>
+                        </select>
+                        <div *ngIf="submitted && f.dropdown.errors" class="invalid-feedback">
+                            <div *ngIf="f.dropdown.errors.required">please select one</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Image</label>
+                        <input type="text" formControlName="imageIcon" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.imageIcon.errors }" />
+                        <div *ngIf="submitted && f.imageIcon.errors" class="invalid-feedback">
+                            <div *ngIf="f.imageIcon.errors.required">Image required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-custom">Add Category</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+</div>
+
+

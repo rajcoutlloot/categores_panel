@@ -4,6 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RoutingModule } from './routing.module';
 import { SharedModule } from './shared/shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { httpInterceptorProviders } from './http-interceptors/index';
 
 
 @NgModule({
@@ -14,9 +18,11 @@ import { SharedModule } from './shared/shared/shared.module';
     BrowserModule,
     RoutingModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

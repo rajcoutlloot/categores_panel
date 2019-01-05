@@ -28,6 +28,11 @@
     background-color: #eff1f4;
     /* grid-template-rows: 10% 10% 10% auto; */
 }
+.btn-outline-warning:hover {
+    color: #212529;
+    background-color: #f3d52f;
+    border-color: #f3d52f;
+}
 /* for tab view */
 @media screen and (max-width: 768px) {
     .main_wrapper{

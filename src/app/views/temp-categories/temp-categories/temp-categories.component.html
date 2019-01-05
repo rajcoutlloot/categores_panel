@@ -1,0 +1,28 @@
+<!-- temp category list to be appeared -->
+<div class="listsection">
+    <div class="main_wrapper" *ngFor="let category of categories"> 
+        <div class="image-container">
+                <div class="image-wrapper">
+                </div>
+            </div>
+        <div class="image-details" >
+            <div class="tittle" > {{ category.categoryId }}  </div>
+            <div class="shortdesc" >{{ category.category }}  </div>
+            <div class="longdesc" > {{ category.categoryName }}   </div>
+            <div class="buttons"> 
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 p-1">
+                        <button type="button" class="btn btn-outline-warning" (click)="nextpage(category.haveAttributes,category.haveSubCats,category.categoryId)" >View details</button>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 p-1">
+                        <button  type="button" class="btn btn-outline-warning" (click)="removecat(category.categoryId)" >Remove</button>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 p-1">
+                        <button *ngIf="category.haveSubCats === 1" type="button" class="btn btn-outline-warning" (click)="addSubcats(category.categoryId)">Add Subcats</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+</div>
+<!-- temp category list to be appeared -->
